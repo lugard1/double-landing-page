@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1 {
+  font-size: 100px;
+  color: aliceblue;
+  backdrop-filter: brightness(.5);
+  letter-spacing: 4px;
+}
+
+.btn {
+  background-color: black;
+  color: #fff;
+  padding: 20px 40px;
+  font-size: 25px;
+  border: 4px solid;
+  cursor: pointer;
+  transition: 1s background-color;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #000;
+}
+
+.split {
+  width: 50%;
+  height: 100%;
+  top: 0;
+  overflow: hidden;
+}
+
+.split.left {
+  position: absolute;
+  left: 0;
+  background-color: pink;
+  background-image: url('https://clearbuy-cloud.nyc3.digitaloceanspaces.com/media/10263/custom_filename.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.split.right {
+  position: absolute;
+  right: 0;
+  background-color: lightblue;
+  background-image: url('https://images-cdn.ubuy.co.in/664bca2cfa227430d670d0f9-pre-owned-samsung-galaxy-s21-ultra-5g.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.active-left .left{
+  width: 75%;
+}
+
+.active-left .right {
+  width: 25%;
+}
+
+.active-right .right{
+  width: 75%;
+}
+
+.active-right .left {
+  width: 25%;
+}
